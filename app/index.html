@@ -1,0 +1,363 @@
+---
+title: 後台表單!!!
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+
+<div class="w-100 mx-4d5">
+  <!-- top-nav -->
+  <div class="top-nav d-flex justify-content-between align-items-center">
+    <div class="nav-item d-flex align-items-center py-4d5">
+      <h1 class="fs-7 fw-bold pe-5d5 mb-0">Assignment</h1>
+      <div class="dropdown">
+        <button class="btn dropdown-toggle fw-bold ps-0" type="button" id="dropbtn" data-bs-toggle="dropdown"
+          aria-expanded="false">All Courses</button>
+        <ul class="dropdown-menu" aria-labelledby="dropbtn">
+          <li><a class="dropdown-item" href="#">Courses 01</a></li>
+          <li><a class="dropdown-item" href="#">Courses 02</a></li>
+          <li><a class="dropdown-item" href="#">Courses 03</a></li>
+        </ul>
+      </div>
+    </div>
+    <ul class="d-flex mb-0 py-4d5 list-unstyled">
+      <li><a href=""><span class="material-icons">search</span></a></li>
+      <li><a href="" class="ms-4d5"><span class="material-icons">notifications_active</span></a></li>
+    </ul>
+  </div>
+  <!-- left-nav -->
+  <div class="row mt-2">
+    <div class="col-4">
+      <div class="dropdown">
+        <button class="btn dropdown-toggle fw-bold ps-0" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          All (4)
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <!-- list-group -->
+      <div class="list-group" id="list-tab" role="tablist">
+        <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list"
+          href="#list-home" role="tab" aria-controls="list-home">
+          <div class="d-flex justify-content-between">
+            <div>
+              <p class="fs-8 mb-1">Chapter Assignment 2</p>
+              <h6 class="fw-bold mb-0">Please check this file…</h6>
+            </div>
+            <div class="text-end">
+              <p class="fs-8 mb-2">4 hrs ago</p>
+              <h6 class="fs-8 mb-0">Emily Wang</h6>
+            </div>
+          </div>
+        </a>
+        <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list"
+          href="#list-profile" role="tab" aria-controls="list-profile">
+          <div class="d-flex justify-content-between">
+            <div>
+              <p class="fs-8 mb-1">Chapter Assignment 1</p>
+              <h6 class="fw-bold mb-0">My Homework</h6>
+            </div>
+            <div class="text-end">
+              <p class="fs-8 mb-2">12 hrs ago</p>
+              <h6 class="fs-8 mb-0">David Xu</h6>
+            </div>
+          </div>
+        </a>
+        <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list"
+          href="#list-messages" role="tab" aria-controls="list-messages">
+          <div class="d-flex justify-content-between">
+            <div>
+              <p class="fs-8 mb-1">Final Assignment</p>
+              <h6 class="fw-bold mb-0">Have a problem with this…</h6>
+            </div>
+            <div class="text-end">
+              <p class="fs-8 mb-2">18 hrs ago</p>
+              <h6 class="fs-8 mb-0">Tony Wei</h6>
+            </div>
+          </div>
+        </a>
+        <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list"
+          href="#list-settings" role="tab" aria-controls="list-settings">
+          <div class="d-flex justify-content-between">
+            <div>
+              <p class="fs-8 mb-1">Final Assignment</p>
+              <h6 class="fw-bold mb-0">Did I do it right?</h6>
+            </div>
+            <div class="text-end">
+              <p class="fs-8 mb-2">19 hrs ago</p>
+              <h6 class="fs-8 mb-0">Christina Lin</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- card start -->
+    <div class="col-8">
+      <p class="fs-8 pt-1 text-secondary text-end">2 comments</p>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+          <!-- inside-card-start -->
+          <div class="card">
+            <div class="card-header bg-light">
+              <div class="d-flex justify-content-between  align-items-center">
+                <div>
+                  <p class="fs-8 mb-1">Chapter Assignment 2 / HTML&CSS</p>
+                  <h6 class="fw-bold mb-0">Please check this file for me, thanks!</h6>
+                </div>
+                <div class="text-end">
+                  <a href=""><span class="material-icons">more_vert</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- media-flex -->
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img class="avatar rounded-circle" src="./assets/images/emilywang.jpeg" alt="">
+                </div>
+                <div class="flex-grow-1 ps-2 border-bottom pb-4">
+                  <p class="fw-bold mb-0">Emily Wang_01</p>
+                  <p class="fs-8 text-secondary">10:38 AM (4 hours ago)</p>
+                  <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the
+                    following code the height of the <span class="text-success bg-light">div</span> is bigger than the
+                    height of the img ? There is a gap below the image, but it doesn’t seems to be a
+                    padding/margin.<br>What is the gap or extra space below image?</p>
+
+                  <a href="" class="btn btn-outline-secondary btn-light fw-bold text-dark" download="HW-2-David.zip">
+                    <div class="d-flex align-item-center"><span
+                        class="material-icons me-2">attach_file</span>HW-2-David.zip</div>
+                  </a>
+                </div>
+              </div>
+              <div class="d-flex mt-4">
+                <div class="flex-shrink-0">
+                  <img class="avatar rounded-circle" src="./assets/images/andychen.jpeg" alt="">
+                </div>
+                <div class="flex-grow-1 ps-2">
+                  <p class="fw-bold mb-0">Andy Chen (You)</p>
+                  <p class="fs-8 text-secondary">13:24 AM (1 hours ago)</p>
+                  <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that
+                    a, b, c and d sit on. There is space below that line for the descenders you find on letters like g,
+                    j, p and q. </p>
+                  <p>You can:</p>
+                  <ul>
+                    <li>adjust the <span class="text-success bg-light">vertical-align</span> of the image to position it
+                      elsewhere (e.g. the <span class="text-success bg-light">middle</span> ) or</li>
+                    <li>change the <span class="text-success bg-light">display</span> so it isn’t inline.</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- media-flex-end -->
+            </div>
+          </div>
+          <!-- inside-card-end -->
+        </div>
+        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+          <!-- inside-card-start -->
+          <div class="card">
+            <div class="card-header bg-light">
+              <div class="d-flex justify-content-between  align-items-center">
+                <div>
+                  <p class="fs-8 mb-1">Chapter Assignment 2 / HTML&CSS</p>
+                  <h6 class="fw-bold mb-0">Please check this file for me, thanks!</h6>
+                </div>
+                <div class="text-end">
+                  <a href=""><span class="material-icons">more_vert</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- media-flex -->
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img class="avatar rounded-circle" src="./assets/images/emilywang.jpeg" alt="">
+                </div>
+                <div class="flex-grow-1 ps-2 border-bottom pb-4">
+                  <p class="fw-bold mb-0">Emily Wang_02</p>
+                  <p class="fs-8 text-secondary">10:38 AM (4 hours ago)</p>
+                  <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the
+                    following code the height of the <span class="text-success bg-light">div</span> is bigger than the
+                    height of the img ? There is a gap below the image, but it doesn’t seems to be a
+                    padding/margin.<br>What is the gap or extra space below image?</p>
+
+                  <a href="" class="btn btn-outline-secondary btn-light fw-bold text-dark" download="HW-2-David.zip">
+                    <div class="d-flex align-item-center"><span
+                        class="material-icons me-2">attach_file</span>HW-2-David.zip</div>
+                  </a>
+                </div>
+              </div>
+              <div class="d-flex mt-4">
+                <div class="flex-shrink-0">
+                  <img class="avatar rounded-circle" src="./assets/images/andychen.jpeg" alt="">
+                </div>
+                <div class="flex-grow-1 ps-2">
+                  <p class="fw-bold mb-0">Andy Chen (You)</p>
+                  <p class="fs-8 text-secondary">13:24 AM (1 hours ago)</p>
+                  <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that
+                    a, b, c and d sit on. There is space below that line for the descenders you find on letters like g,
+                    j, p and q. </p>
+                  <p>You can:</p>
+                  <ul>
+                    <li>adjust the <span class="text-success bg-light">vertical-align</span> of the image to position it
+                      elsewhere (e.g. the <span class="text-success bg-light">middle</span> ) or</li>
+                    <li>change the <span class="text-success bg-light">display</span> so it isn’t inline.</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- media-flex-end -->
+            </div>
+          </div>
+          <!-- inside-card-end -->
+        </div>
+        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+          <!-- inside-card-start -->
+          <div class="card">
+            <div class="card-header bg-light">
+              <div class="d-flex justify-content-between  align-items-center">
+                <div>
+                  <p class="fs-8 mb-1">Chapter Assignment 2 / HTML&CSS</p>
+                  <h6 class="fw-bold mb-0">Please check this file for me, thanks!</h6>
+                </div>
+                <div class="text-end">
+                  <a href=""><span class="material-icons">more_vert</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- media-flex -->
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img class="avatar rounded-circle" src="./assets/images/emilywang.jpeg" alt="">
+                </div>
+                <div class="flex-grow-1 ps-2 border-bottom pb-4">
+                  <p class="fw-bold mb-0">Emily Wang_03</p>
+                  <p class="fs-8 text-secondary">10:38 AM (4 hours ago)</p>
+                  <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the
+                    following code the height of the <span class="text-success bg-light">div</span> is bigger than the
+                    height of the img ? There is a gap below the image, but it doesn’t seems to be a
+                    padding/margin.<br>What is the gap or extra space below image?</p>
+
+                  <a href="" class="btn btn-outline-secondary btn-light fw-bold text-dark" download="HW-2-David.zip">
+                    <div class="d-flex align-item-center"><span
+                        class="material-icons me-2">attach_file</span>HW-2-David.zip</div>
+                  </a>
+                </div>
+              </div>
+              <div class="d-flex mt-4">
+                <div class="flex-shrink-0">
+                  <img class="avatar rounded-circle" src="./assets/images/andychen.jpeg" alt="">
+                </div>
+                <div class="flex-grow-1 ps-2">
+                  <p class="fw-bold mb-0">Andy Chen (You)</p>
+                  <p class="fs-8 text-secondary">13:24 AM (1 hours ago)</p>
+                  <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that
+                    a, b, c and d sit on. There is space below that line for the descenders you find on letters like g,
+                    j, p and q. </p>
+                  <p>You can:</p>
+                  <ul>
+                    <li>adjust the <span class="text-success bg-light">vertical-align</span> of the image to position it
+                      elsewhere (e.g. the <span class="text-success bg-light">middle</span> ) or</li>
+                    <li>change the <span class="text-success bg-light">display</span> so it isn’t inline.</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- media-flex-end -->
+            </div>
+          </div>
+          <!-- inside-card-end -->
+        </div>
+        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+          <!-- inside-card-start -->
+          <div class="card">
+            <div class="card-header bg-light">
+              <div class="d-flex justify-content-between  align-items-center">
+                <div>
+                  <p class="fs-8 mb-1">Chapter Assignment 2 / HTML&CSS</p>
+                  <h6 class="fw-bold mb-0">Please check this file for me, thanks!</h6>
+                </div>
+                <div class="text-end">
+                  <a href=""><span class="material-icons">more_vert</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- media-flex -->
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img class="avatar rounded-circle" src="./assets/images/emilywang.jpeg" alt="">
+                </div>
+                <div class="flex-grow-1 ps-2 border-bottom pb-4">
+                  <p class="fw-bold mb-0">Emily Wang_04</p>
+                  <p class="fs-8 text-secondary">10:38 AM (4 hours ago)</p>
+                  <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the
+                    following code the height of the <span class="text-success bg-light">div</span> is bigger than the
+                    height of the img ? There is a gap below the image, but it doesn’t seems to be a
+                    padding/margin.<br>What is the gap or extra space below image?</p>
+
+                  <a href="" class="btn btn-outline-secondary btn-light fw-bold text-dark" download="HW-2-David.zip">
+                    <div class="d-flex align-item-center"><span
+                        class="material-icons me-2">attach_file</span>HW-2-David.zip</div>
+                  </a>
+                </div>
+              </div>
+              <div class="d-flex mt-4">
+                <div class="flex-shrink-0">
+                  <img class="avatar rounded-circle" src="./assets/images/andychen.jpeg" alt="">
+                </div>
+                <div class="flex-grow-1 ps-2">
+                  <p class="fw-bold mb-0">Andy Chen (You)</p>
+                  <p class="fs-8 text-secondary">13:24 AM (1 hours ago)</p>
+                  <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that
+                    a, b, c and d sit on. There is space below that line for the descenders you find on letters like g,
+                    j, p and q. </p>
+                  <p>You can:</p>
+                  <ul>
+                    <li>adjust the <span class="text-success bg-light">vertical-align</span> of the image to position it
+                      elsewhere (e.g. the <span class="text-success bg-light">middle</span> ) or</li>
+                    <li>change the <span class="text-success bg-light">display</span> so it isn’t inline.</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- media-flex-end -->
+            </div>
+          </div>
+          <!-- inside-card-end -->
+        </div>
+      </div>
+      <!-- page start -->
+      <div class="d-flex justify-content-between mt-4">
+        <ul class="d-flex list-unstyled">
+          <li><a href=""><span class="material-icons me-3">keyboard_arrow_left</span></a></li>
+          <li><a href=""><span class="material-icons">keyboard_arrow_right</span></a></li>
+        </ul>
+        <ul class="d-flex list-unstyled">
+          <li><button type="button" class="btn btn-outline-success me-3">Mark as read</button></li>
+          <li><button type="button" class="btn btn-success">Reply</button></li>
+        </ul>
+      </div>
+      <!-- page end -->
+    </div>
+    <!-- card end -->
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
