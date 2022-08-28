@@ -1,10 +1,49 @@
----
-title: 後台表單!!!
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    後台表單!!!
+  </title>
+  <link rel="stylesheet" href="./assets/style/helper/bootstrap.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+
+  <main class="d-flex">
+    <div class="d-flex flex-column justify-content-between bg-light py-5 col-2 vh-100">
+      <div>
+        <a class="logo mb-4d5 ps-4d5" href="index.html"><img src="./assets/images/logo-ANSWER.svg" alt=""></a>
+        <ul class="nav d-flex flex-column">
+          <li class="nav-item mb-4 d-flex align-items-center"><a class="d-flex fw-bold ps-4d5" href=""><span
+                class="material-icons me-3">analytics</span>Analytics</a></li>
+          <li class="nav-item mb-4 d-flex align-items-center"><a class="d-flex fw-bold ps-4d5" href=""><span
+                class="material-icons me-3">forum</span>Question</a></li>
+          <li class="nav-item-active mb-4 d-flex align-items-center"><a class="d-flex fw-bold actived" href=""><span
+                class="material-icons me-3 ">assignment</span>Assignment</a></li>
+          <li class="nav-item mb-4 d-flex align-items-center"><a class="d-flex fw-bold ps-4d5" href=""><span
+                class="material-icons me-3">video_library</span>Course</a></li>
+          <li class="nav-item mb-4 d-flex align-items-center"><a class="d-flex fw-bold ps-4d5" href=""><span
+                class="material-icons me-3">supervisor_account</span>Admin</a></li>
+          <li class="nav-item mb-4 d-flex align-items-center"><a class="d-flex fw-bold ps-4d5" href=""><span
+                class="material-icons me-3">settings</span>Settings</a></li>
+        </ul>
+      </div>
+      <div class="brand ps-4d5 d-flex">
+        <img class="avatar rounded-circle" src="./assets/images/andychen.jpeg" alt="">
+        <div class="ps-3">
+        <p class="fw-bold mb-0">Andy Chen</p>
+        <span class="text-secondary" >andy0401@mail.com</span>
+      </div>
+      </div>
+    </div>
+
+  
 
 <div class="w-100 mx-4d5">
   <!-- top-nav -->
@@ -361,3 +400,11 @@ current: index
 
 
 </main>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
